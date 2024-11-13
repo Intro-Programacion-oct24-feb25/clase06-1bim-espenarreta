@@ -28,7 +28,7 @@ public class ComercioTres {
         double coeficiente = 0.6;
         double bono  = 0;
         
-        double porcentajeSeguro = 8;
+        double porcentajeSeguro;
         double adicionalSeguro;
         
         double sueldoFinal; 
@@ -48,6 +48,10 @@ public class ComercioTres {
         System.out.println("Ingrese el número de productos vendidos "
                 + "por favor");
         numeroProductos = entrada.nextInt();
+        
+        System.out.println("Ingrese porcentaje del seguro "
+                + "por favor");
+        porcentajeSeguro = entrada.nextDouble();
         
         // calcular la productividad
         productividad = numeroProductos * coeficiente;
@@ -69,6 +73,28 @@ public class ComercioTres {
         }
         
        
+        // opción 1
+        if (porcentajeSeguro >= 1 && porcentajeSeguro <= 15) {
+            porcentajeSeguro = porcentajeSeguro + 0;
+        } else {
+            porcentajeSeguro = 10;
+        }
+
+        // opción 2
+        if (porcentajeSeguro > 15) {
+            porcentajeSeguro = 10;
+        }
+
+         // opción 3
+        if (porcentajeSeguro < 1 || porcentajeSeguro > 15) {
+            porcentajeSeguro = 10;
+        }
+
+        // opción 4
+        if (porcentajeSeguro < 1 && porcentajeSeguro > 15) {
+            porcentajeSeguro = 10;
+        }
+        
         adicionalSeguro = (sueldoBasico * porcentajeSeguro)/100;
         sueldoFinal = adicionalSeguro + bono + sueldoBasico;
         
