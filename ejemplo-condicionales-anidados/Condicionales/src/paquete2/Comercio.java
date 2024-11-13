@@ -69,7 +69,7 @@ public class Comercio {
         }
         
        
-        adicionalSeguro = (sueldoBasico * 8)/100;
+        adicionalSeguro = (sueldoBasico * porcentajeSeguro)/100;
         sueldoFinal = adicionalSeguro + bono + sueldoBasico;
         
         System.out.printf("Reporte de Empleado EL GRAN COMERCIO\n\n"
@@ -83,7 +83,7 @@ public class Comercio {
                 + "Adicional del seguro: $%.2f\n\n"
                 + "Sueldo final: $%.2f\n", 
                 nombre, 
-                apellido,
+                apellido,   
                 edad,
                 sueldoBasico,
                 numeroProductos,
