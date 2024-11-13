@@ -19,5 +19,7 @@ public class EjemploCadenas {
         // toLowerCase es un método
         // toUpperCase es un método
         
+        /* el .toUpperCase sirve para hacer que todo se imprima en mayusculas
+        mientras el .toLowerCase para imprimir todo en minusculas*/
     }
 }
