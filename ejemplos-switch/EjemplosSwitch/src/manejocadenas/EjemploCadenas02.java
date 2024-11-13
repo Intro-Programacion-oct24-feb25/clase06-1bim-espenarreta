@@ -15,7 +15,9 @@ import java.util.Scanner;
 public class EjemploCadenas02 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        // 
+        //
+        /*El String format sirve para acumular valores de tipo cadena en una
+        cadena*/
         entrada.useLocale(Locale.US);
         String cadenaFinal = "Datos Ingresados\n";
         
