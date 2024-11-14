@@ -25,23 +25,59 @@ public class Ejemplo01 {
         
         switch(cadena){
             case "Lunes":
-                System.out.printf("%s", cadena);
+            case "lunes":
+            case "LuNeS":
+            case "LUnes":
+            case "luNES":
+                System.out.printf("%s", cadena, cadena.toUpperCase());
                 break;
             
             case "Martes":
             case "martes":
-                System.out.printf("%s", cadena);
+            case "MaRtEs":
+            case "mArTeS":
+            case "MARtes":
+                System.out.printf("%s", cadena, cadena.toUpperCase());
                 break;
             
+            case "Miércoles" :
+            case "MiÉrCoLeS" :
+            case "mIéRcOlEs" :
+            case "MIÉRcoles" :
+            case "miércoles" :
+            case "miercoles" :
+            case "Miercoles" :
+                System.out.printf("%s", cadena.toUpperCase());
+                break;
+                
+            case "Jueves" :
+            case "jueves" :
+            case "JuEvEs" :
+            case "jUeVes" :
+            case "JUEVES" :
+                System.out.printf("%s", cadena.toUpperCase());
+                break;
+                
             case "Viernes":
             case "VIERNES":
             case "viernes":
-                System.out.printf("%s", cadena);
+            case "ViErNeS":
+            case "vIeRnEs":
+                System.out.printf("%s", cadena.toUpperCase());
                 break;
             
+            case "Sábado" :
+            case "sábado" :
+            case "SáBaDo" :
+            case "sabado" :
+            case "Sabado" :
+            case "sAbÁdO" :
+                System.out.printf("%s", cadena.toUpperCase());
+                break;
+                
             case "Domingo":
                 System.out.printf("%s, es el séptimo día "
-                        + "de la semana", cadena);
+                        + "de la semana", cadena.toUpperCase());
                 break;
                 
             default:
